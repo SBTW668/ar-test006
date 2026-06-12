@@ -8,7 +8,6 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 
     <style>
-        /* 讓 3D 視窗填滿整個手機或電腦螢幕 */
         body, html {
             margin: 0;
             padding: 0;
@@ -24,7 +23,6 @@
             height: 100%;
         }
 
-        /* 自訂漂亮的 AR 按鈕樣式 */
         .ar-button {
             background-color: #0071e3;
             color: white;
@@ -56,10 +54,10 @@
         ar-modes="webxr scene-viewer quick-look"
         camera-controls
         auto-rotate
-        shadow-intensity="1"
-        environment-image="neutral"
-        exposure="1"
-        touch-action="pan-y">
+        
+        skybox-image="https://modelviewer.dev/shared-assets/environments/aircraft_workshop_01_1k.hdr"
+        environment-image="https://modelviewer.dev/shared-assets/environments/aircraft_workshop_01_1k.hdr"
+        exposure="1.2"                  shadow-intensity="1.5"          shadow-softness="0.5"           touch-action="pan-y">
         
         <button slot="ar-button" class="ar-button">
             📱 點擊進入 AR 空間觀看
